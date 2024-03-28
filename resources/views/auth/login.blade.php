@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ $title }} | Andis Dev </title>
+    <title>Dashboard-app</title>
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -17,15 +17,15 @@
 
 </head>
 
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background-color: rgb(171,197,249, 0.2);">
 
     @include('sweetalert::alert')
 
-    <div class="login-box">
+    <div class="login-box" style="width: 600px">
 
-        <div class="card card-outline card-primary">
+        <div class="card card-outline card-primary" >
             <div class="card-header text-center">
-                <a href="/" class="h1"><b>Andis</b> Dev</a>
+                <a href="/login" class="h1"><b>Login</b></a>
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Sign in to start your session</p>
@@ -48,22 +48,23 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-8">
+                        <div class="col-8 mb-2">
                             <div class="icheck-primary">
                                 <input type="checkbox" id="remember">
                                 <label for="remember">
                                     Remember Me
                                 </label>
                             </div>
-                        </div>
-
-                        <div class="col-4">
+                        </div>    
+                    </div>
+                        <div class="input-group mb-4">
                             <button type="submit" class="btn btn-primary btn-block">Sign In</button>
                         </div>
                         <p class="mb-0">
-                            <a href="/register" class="text-center">Register a new membership</a>
+                            <a href="/register" class="text-center">Register a new user</a>
                         </p>
                     </div>
+                    
                 </form>
             </div>
 

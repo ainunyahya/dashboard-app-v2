@@ -17,16 +17,16 @@
 
 </head>
 
-<body class="hold-transition register-page">
+<body class="hold-transition register-page" style="background-color: rgb(171,197,249, 0.2);">
     @include('sweetalert::alert')
 
-    <div class="register-box">
+    <div class="register-box " style="width: 600px">
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="/" class="h1"><b>Andis</b> Dev</a>
+                <a href="/register" class="h1"><b>Register</b></a>
             </div>
             <div class="card-body">
-                <p class="login-box-msg">Register a new membership</p>
+                <p class="login-box-msg">Register a new user</p>
                 <form class="needs-validation" novalidate action="/register" method="POST">
                     @csrf
                     <div class="input-group mb-3">
@@ -66,7 +66,7 @@
                             <span class="invalid-feedback text-danger">{{ $message }}</span>
                         @enderror
                     </div>
-                    <div class="input-group mb-3">
+                    <div class="input-group mb-4">
                         <input type="password" name="passwordConfirm" id="passwordConfirm"
                             class="form-control @error('passwordConfirm') is-invalid @enderror"
                             placeholder="Retype password" required>
@@ -89,13 +89,13 @@
                             </div>
                         </div> --}}
 
-                        <div class="col-4">
+                        <div class="input-group mb-3">
                             <button type="submit" class="btn btn-primary btn-block">Register</button>
                         </div>
 
                     </div>
                 </form>
-                <a href="/login" class="text-center">I already have a membership</a>
+                <a href="/login" class="text-center">I already have a user</a>
             </div>
 
         </div>
